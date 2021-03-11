@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiragana Input on Chrome for Windows</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="https://w3c.github.io/uievents/tools/key-event-viewer.css">    
+</head>
+
+<table id="output">
+    <thead>
+        <tr>
+            <td align="center" colspan="2" class="keycell etype"></td>
+            <td align="center" colspan="3" class="keycell legacy legacy_header">Legacy</td>
+            <td align="center" colspan="5" class="keycell modifiers modifiers_header">Modifiers</td>
+            <td align="center" colspan="3" class="keycell olddom3 olddom3_header" style="display: none;">Old DOM3</td>
+            <td align="center" colspan="7" class="keycell uievents uievents_header">UI Events</td>
+            <td align="center" colspan="1" class="keycell proposed proposed_header" style="display: none;">Proposed</td>
+            <td align="center" colspan="1" class="keycell inputbox"></td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype etype_header subheader">#</td>
+            <td align="center" class="keycell etype etype_header subheader">Event type</td>
+            <td align="center" class="keycell legacy legacy_header subheader">charCode</td>
+            <td align="center" class="keycell legacy legacy_header subheader">keyCode</td>
+            <td align="center" class="keycell legacy legacy_header subheader">which</td>
+            <td align="center" class="keycell modifiers modifiers_header subheader">getModifierState</td>
+            <td align="center" class="keycell modifiers modifiers_header subheader">shift</td>
+            <td align="center" class="keycell modifiers modifiers_header subheader">ctrl</td>
+            <td align="center" class="keycell modifiers modifiers_header subheader">alt</td>
+            <td align="center" class="keycell modifiers modifiers_header subheader">meta</td>
+            <td align="center" class="keycell olddom3 olddom3_header subheader" style="display: none;">keyIdentifier
+            </td>
+            <td align="center" class="keycell olddom3 olddom3_header subheader" style="display: none;">keyLocation</td>
+            <td align="center" class="keycell olddom3 olddom3_header subheader" style="display: none;">char</td>
+            <td align="center" class="keycell uievents uievents_header subheader">key</td>
+            <td align="center" class="keycell uievents uievents_header subheader">code</td>
+            <td align="center" class="keycell uievents uievents_header subheader">location</td>
+            <td align="center" class="keycell uievents uievents_header subheader">repeat</td>
+            <td align="center" class="keycell uievents uievents_header subheader">isComposing</td>
+            <td align="center" class="keycell uievents uievents_header subheader">inputType</td>
+            <td align="center" class="keycell uievents uievents_header subheader">data</td>
+            <td align="center" class="keycell proposed proposed_header subheader" style="display: none;">locale</td>
+            <td align="center" class="keycell inputbox inputbox_header subheader">Input field</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">60</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">Enter</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">59</td>
+            <td align="center" class="keycell etype"><span>compositionend</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">58</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">57</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">56</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">55</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">Enter</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">54</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">ArrowDown</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">53</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'鮨し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">52</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すしし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">51</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'鮨'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すしし'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">50</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">ArrowDown</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すしし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">49</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">ArrowDown</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すしし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">48</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すしし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">47</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">46</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">45</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">ArrowDown</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">44</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">MetaLeft</td>
+            <td align="center" class="keycell uievents">LEFT</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">43</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">Meta, NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOn">✓</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">Slash</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">42</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'寿司'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'寿司し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">41</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'寿司'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">40</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'寿司'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">39</td>
+            <td align="center" class="keycell etype"><span>compositionstart</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">''</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">38</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents">deleteContentBackward</td>
+            <td align="center" class="keycell uievents">'null'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'し'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">37</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents">deleteContentBackward</td>
+            <td align="center" class="keycell uievents">'null'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">36</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">Meta, NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOn">✓</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">Slash</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">35</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy"><span>91<span
+                        class="keyevent_hilight keydown_hilight">Meta</span></span></td>
+            <td align="center" class="keycell legacy">91</td>
+            <td align="center" class="keycell modifiers">Meta, NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOn">✓</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Meta</span></td>
+            <td align="center" class="keycell uievents">MetaLeft</td>
+            <td align="center" class="keycell uievents">LEFT</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">34</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy"><span>37<span
+                        class="keyevent_hilight keyup_hilight">%</span></span></td>
+            <td align="center" class="keycell legacy">37</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">ArrowLeft</span>
+            </td>
+            <td align="center" class="keycell uievents">ArrowLeft</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">33</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy"><span>37<span
+                        class="keyevent_hilight keydown_hilight">%</span></span></td>
+            <td align="center" class="keycell legacy">37</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">ArrowLeft</span>
+            </td>
+            <td align="center" class="keycell uievents">ArrowLeft</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">32</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">Enter</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">31</td>
+            <td align="center" class="keycell etype"><span>compositionend</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">30</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">29</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">28</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">27</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">Enter</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">26</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">KeyI</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">25</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すし'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">24</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓｈ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">23</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すし'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓｈ'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">22</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">KeyI</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓｈ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">21</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">KeyH</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓｈ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">20</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すｓｈ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓｈ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">19</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すｓｈ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">18</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すｓｈ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓ'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">17</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">KeyH</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">16</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">KeyS</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">15</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'すｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">14</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'すｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'す'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">13</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'すｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'す'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">12</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">KeyS</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'す'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">11</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">KeyU</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'す'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">10</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'す'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'す'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">9</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'す'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'ｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">8</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'す'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'ｓ'</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">7</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">KeyU</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'ｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">6</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keyup_hilight keyup_arrow">keyup</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keyup_hilight">Process</span></td>
+            <td align="center" class="keycell uievents">KeyS</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'ｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">5</td>
+            <td align="center" class="keycell etype"><span>input</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'ｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">'ｓ'</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">4</td>
+            <td align="center" class="keycell etype"><span>compositionupdate</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">'ｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">''</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">3</td>
+            <td align="center" class="keycell etype"><span>beforeinput</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOn">✓</td>
+            <td align="center" class="keycell uievents">insertCompositionText</td>
+            <td align="center" class="keycell uievents">'ｓ'</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">''</td>
+        </tr>
+        <tr>
+            <td align="center" class="keycell etype">2</td>
+            <td align="center" class="keycell etype"><span>compositionstart</span></td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell legacy undef">-</td>
+            <td align="center" class="keycell modifiers undef">-</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents">''</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">''</td>
+        </tr>
+        <tr class="keydown_row_hilight">
+            <td align="center" class="keycell etype">1</td>
+            <td align="center" class="keycell etype"><span
+                    class="keyevent_hilight keydown_hilight keydown_arrow">keydown</span></td>
+            <td align="center" class="keycell legacy">0</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell legacy">229</td>
+            <td align="center" class="keycell modifiers">NumLock</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell modifiers modOff">✗</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell olddom3 undef" style="display: none;">-</td>
+            <td align="center" class="keycell uievents"><span class="keyevent_hilight keydown_hilight">Process</span>
+            </td>
+            <td align="center" class="keycell uievents">KeyS</td>
+            <td align="center" class="keycell uievents">0</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents modOff">✗</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell uievents undef">-</td>
+            <td align="center" class="keycell proposed undef" style="display: none;">-</td>
+            <td align="left" class="keycell inputbox">''</td>
+        </tr>
+    </thead>
+</table>
+</html>
