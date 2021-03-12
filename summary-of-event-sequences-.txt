@@ -1,0 +1,61 @@
+Typing "sushi" in JP IME and triggering reconversion.
+
+Chrome on Windows
+Composing:
+keydown -> compositionstart -> beforeinput(insertCompositionText) and the DOM is not updated -> compositionupdate -> input(insertCompositionText) and the DOM is updated -> keyup
+
+Commit:
+keydown (Enter key) -> beforeinput(insertCompositionText) and the DOM is not updated -> compositionupdate -> input(insertCompositionText) and the DOM is updated -> 
+compositionend -> keyup (Enter key)
+
+Trigger reconversion:
+keydown -> keyup -> keydown -> keydown -> beforeinput(deleteContentBackward) and the DOM is not updated -> 
+input(deleteContentBackward) and the DOM is updated to delete the string being recomposed -> compositionstart -> beforeinput(insertCompositionText) and the DOM is not updated ->
+compositionupdate -> input(insertCompositionText) and the DOM is updated. -> keyup -> keyup
+
+When we hit arrow keys to select candidates, the events sequences are:
+keydown (Arrow key) -> beforeinput(insertCompositionText) and the DOM is not updated -> compositionupdate -> input(insertCompositionText) and the DOM is updated -> keyup (Arrow key)
+Then commit follows the same event sequences as mentioned above.
+
+Firefox on Windows
+Composing:
+keydown -> compositionstart -> compositionupdate -> input(insertCompositionText) and the DOM is updated -> keyup
+
+Commit:
+keydown (Enter key) -> compositionend -> input(insertCompositionText) and the DOM is updated -> keyup (Enter key)
+
+Trigger reconversion:
+keydown -> keyup -> keydown -> keydown -> compositionstart -> compositionupdate -> input(insertCompositionText) and the DOM is updated.
+
+When we hit arrow keys to select candidates, the events sequences are:
+keydown (Arrow key) -> compositionupdate -> input(insertCompositionText) and the DOM is updated -> keyup (Arrow key)
+Then commit follows the same event sequences as mentioned above.
+
+Safari on Mac
+Composing:
+compositionstart -> compositionupdate -> beforeinput(insertCompositionText) and the DOM is not updated -> input(insertCompositionText) and the DOM is updated -> keydown -> keyup
+
+Commit:
+beforeinput(deleteCompositionText) and the DOM is not updated -> input(deleteCompositionText) and the DOM is updated -> 
+beforeinput(insertFromComposition) and the DOM is not updated -> input(insertFromComposition) and the DOM is updated -> compositionend -> keydown (Enter key) -> keyup (Enter key)
+
+Trigger reconversion:
+keydown -> keyup -> keydown -> keydown -> beforeinput(deleteByComposition) and the DOM is not updated -> 
+input(deleteByComposition) and the DOM is updated to delete the string being recomposed -> compositionstart -> compositionupdate -> 
+beforeinput(insertCompositionText) and the DOM is not updated -> input(insertCompositionText) and the DOM is not updated -> 
+beforeinput(deleteCompositionText) and the DOM is not updated -> input(deleteCompositionText) and the DOM is not updated -> compositionend ->
+compositionstart -> compositionupdate -> beforeinput(insertCompositionText) and the DOM is not updated -> input(insertCompositionText) and the DOM is updated -> 
+
+Three sets of compositionupdate -> beforeinput(insertCompositionText) and the DOM is not updated -> input(insertCompositionText) and the DOM is not updated -> 
+keyup -> keyup -> keyup
+
+When we hit arrow keys to select candidates, the events sequences are:
+compositionupdate -> beforeinput(insertCompositionText) and the DOM is not updated -> input(insertCompositionText) and the DOM is updated -> keydown (Arrow key) -> keyup (Arrow key)
+-> beforeinput(insertCompositionText) and the DOM is not updated -> compositionupdate -> input(insertCompositionText) and the DOM is updated.
+Then commit follows the same event sequences as mentioned above.
+
+Differences in sequences of beforeinput/input events:
+Composing:
+- Chrome fires keydown event before we start a composition, Safari fires keydown after input event when the DOM is mutated, Firefox follows Chrome.
+- beforeinput for insertCompositionText: Chrome fires after compositionstart, Safari fires after compositionupdate, Firefox doesn't fire beforeinput events.
+- input for insertCompositionText: Chrome fires after compositionupdate
