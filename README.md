@@ -15,3 +15,6 @@ A video capturing what the input sequence looks like can be seen [here for Windo
 
 ## Safari
 * [Hiragana Mac](https://bocupp-microsoft.github.io/recorded-input-events/hiragana-safari-mac.html)
+
+# Miscellaneous Input Events
+[Long press 'e' on Mac](https://bocupp-microsoft.github.io/recorded-input-events/long-press-e-mac.html)
